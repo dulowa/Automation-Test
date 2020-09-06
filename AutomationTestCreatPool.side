@@ -1,0 +1,105 @@
+{
+  "id": "c0f9bc50-1e50-4c17-908e-827bf1085765",
+  "version": "2.0",
+  "name": "pool ",
+  "url": "http://poll-app7-20200409.softacad.bg/polls",
+  "tests": [{
+    "id": "30f2ab8c-be01-450c-8f47-8c54003fe419",
+    "name": "Untitled",
+    "commands": [{
+      "id": "cec3fe5c-1312-498b-84f0-2e0e9e66c63a",
+      "comment": "",
+      "command": "open",
+      "target": "/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "63584603-4266-4425-997b-151174e44188",
+      "comment": "",
+      "command": "type",
+      "target": "id=usernameOrEmail",
+      "targets": [],
+      "value": "tg4admin"
+    }, {
+      "id": "7d067545-b264-44f2-92c1-7fa306faa275",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [],
+      "value": "123456"
+    }, {
+      "id": "99257fff-f009-4313-ac3c-94093e738239",
+      "comment": "",
+      "command": "click",
+      "target": "name=login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "384655af-88c6-4eb7-a4c6-86a0b00f0113",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=(//span[contains(@class,'oi-list-rich')])[2]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5e4b63bd-d6bf-4dfd-9dbc-f046d07aa08b",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return Math.random().toString(36).substring(7);",
+      "targets": [],
+      "value": "randomQuestion"
+    }, {
+      "id": "0423180a-bb0e-48f6-8839-32cea59255e1",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//textarea",
+      "targets": [],
+      "value": "${randomQustion}"
+    }, {
+      "id": "0598dbb9-689d-465a-8f60-fe6ab88c0023",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return Math.random().toString(36).substring(7);",
+      "targets": [],
+      "value": "randomChoice1"
+    }, {
+      "id": "e93fe45d-da92-4811-a4c2-822c9cafb1aa",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=(//input)[1]",
+      "targets": [],
+      "value": "${randomChoice1}"
+    }, {
+      "id": "e580debe-a405-4b5d-b8b0-186afbf2b8c2",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return Math.random().toString(36).substring(7);",
+      "targets": [],
+      "value": "randomChoice2"
+    }, {
+      "id": "8b3c03f4-a5ec-4230-a690-ee4b13bfb2ed",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=(//input)[2]",
+      "targets": [],
+      "value": "${randomChoice2}"
+    }, {
+      "id": "df0f6b52-e460-48c7-bd52-b4a99d2e3310",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=(//button)[3]",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "8bb479ed-ead3-4538-a99f-f4171b833111",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["30f2ab8c-be01-450c-8f47-8c54003fe419"]
+  }],
+  "urls": ["http://poll-app7-20200409.softacad.bg/polls"],
+  "plugins": []
+}

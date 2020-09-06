@@ -1,0 +1,63 @@
+{
+  "id": "3f183980-cc17-452b-ab38-c0ec4b1d90a4",
+  "version": "2.0",
+  "name": "AutomationTestSignUp",
+  "url": "http://poll-app7-20200409.softacad.bg/",
+  "tests": [{
+    "id": "ecf98bd2-e054-4569-8ac9-230830d92745",
+    "name": "AutomationTestSignUp",
+    "commands": [{
+      "id": "b3a04d70-f87e-4d52-8bb8-cba5d8b2c689",
+      "comment": "",
+      "command": "open",
+      "target": "/signup",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "df9b9d3f-992d-47a8-8ac2-1e0cf7093ffd",
+      "comment": "",
+      "command": "type",
+      "target": "id=full-name",
+      "targets": [],
+      "value": "Radoslava Dulova"
+    }, {
+      "id": "bfe82347-464f-49b4-8aa3-bd48f9d97517",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [],
+      "value": "radoslava"
+    }, {
+      "id": "4cd72913-47bf-4268-b18e-629aa6ef8aa6",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [],
+      "value": "dulova@abv.bg"
+    }, {
+      "id": "9ae6dca7-b72d-4a58-833c-80d0392ca2a3",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [],
+      "value": "123456789"
+    }, {
+      "id": "08bfd111-09f9-4720-acbc-ddb7c47eb932",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=(//button)[4]",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "0a669339-4d48-4a0e-a87b-ea3e412b1af7",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["ecf98bd2-e054-4569-8ac9-230830d92745"]
+  }],
+  "urls": ["http://poll-app7-20200409.softacad.bg/"],
+  "plugins": []
+}
